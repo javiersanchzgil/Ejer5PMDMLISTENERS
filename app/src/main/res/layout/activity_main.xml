@@ -14,6 +14,7 @@
         android:layout_marginTop="72dp"
         android:layout_marginEnd="159dp"
         android:layout_marginBottom="331dp"
+        android:enabled="false"
         android:text="añadir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,12 +28,15 @@
         android:layout_marginTop="53dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="25dp"
+        android:autofillHints="Texto1"
         android:ems="10"
+        android:hint="Texto1"
         android:inputType="textPersonName"
-        android:text="Texto1"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/texto2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/nTexto"
@@ -49,11 +53,15 @@
         android:id="@+id/texto2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="100dp"
+        android:autofillHints="Texto2"
         android:ems="10"
+        android:hint="Texto2"
         android:inputType="textPersonName"
-        android:text="Texto2"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/texto1"
-        tools:layout_editor_absoluteX="102dp" />
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
